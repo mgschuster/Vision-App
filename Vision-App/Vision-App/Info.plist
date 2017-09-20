@@ -42,6 +42,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>Vision needs permission to use the camera.</string>
+	<string>Vision needs permission to use the camera to take and process photos.</string>
 </dict>
 </plist>
