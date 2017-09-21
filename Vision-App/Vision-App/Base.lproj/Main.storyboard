@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,6 +63,10 @@
                                     <constraint firstAttribute="width" constant="75" id="TER-T7-keq"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="b6d-r7-ar4">
+                                <rect key="frame" x="307" y="573" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeU-uf-Zdj" customClass="RoundedShadowButton" customModule="Vision_App" customModuleProvider="target">
                                 <rect key="frame" x="20" y="615" width="100" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,7 +93,9 @@
                             <constraint firstItem="oeU-uf-Zdj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y5A-ge-3TV"/>
                             <constraint firstItem="iF0-qU-0Xg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YAN-jV-Ivw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iF0-qU-0Xg" secondAttribute="trailing" constant="20" id="aYf-Xf-pna"/>
+                            <constraint firstItem="b6d-r7-ar4" firstAttribute="centerY" secondItem="YyZ-4b-lLz" secondAttribute="centerY" id="bgu-bR-vc5"/>
                             <constraint firstItem="Bdd-4I-rjk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jCp-fc-bfm"/>
+                            <constraint firstItem="b6d-r7-ar4" firstAttribute="centerX" secondItem="YyZ-4b-lLz" secondAttribute="centerX" id="leO-sh-r5l"/>
                             <constraint firstItem="iF0-qU-0Xg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="sVH-fQ-yVk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YyZ-4b-lLz" secondAttribute="bottom" constant="20" id="x4G-1V-bvz"/>
                         </constraints>
@@ -102,6 +108,7 @@
                         <outlet property="flashBtn" destination="oeU-uf-Zdj" id="51I-oZ-kzT"/>
                         <outlet property="identificationLbl" destination="dgX-WA-zPv" id="Qqd-QY-sIR"/>
                         <outlet property="roundedLblView" destination="iF0-qU-0Xg" id="oTO-Qs-jEN"/>
+                        <outlet property="spinner" destination="b6d-r7-ar4" id="jDx-Tb-DtD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
